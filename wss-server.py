@@ -19,7 +19,7 @@ def chat(ws):
         msg = ws.receive()
         if msg:
             for u in users:
-                u.send(msg)
+                u.send(str(msg))
         else:
             break
     users.remove(ws)

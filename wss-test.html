@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>web-test</title>
+    <title>wss-test</title>
     <style>
         #msg {
-            width:400px; height:400px; overflow:auto; border:2px solid #000000;background-color:#000000;color:#ffffff; }
+            width: auto;
+            height: 600px;
+            overflow: auto;
+            background-color: black;
+            color: green;
+            font-size: 13px;
+            word-wrap:break-word;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +38,7 @@
                 $('#msg').append('<li>websocket连接成功</li>');
            }
            ws.onmessage = function(evt) {
-                $('#msg').prepend('<li>' + evt.data + '</li>');
+                $('#msg').append(evt.data + '<br>');
            }
         });
     </script>
