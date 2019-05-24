@@ -22,7 +22,6 @@ def collect_log():
         line = popen.stdout.readline().strip()
         if line:
             ws.send(line)
-        print(time.time())
 
 
 if __name__ == '__main__':
