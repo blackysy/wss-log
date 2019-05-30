@@ -6,10 +6,9 @@
 # @Software : PyCharm
 
 import subprocess
-import time
 from websocket import create_connection
 
-ws_server = 'ws://192.168.22.152:8000/websocket/'
+ws_server = 'ws://192.168.22.163:8000/websocket/'
 cmd = '/usr/bin/tailf {log_path}'.format(log_path='/tmp/wss-test.log')
 
 
